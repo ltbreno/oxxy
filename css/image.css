@@ -1,0 +1,251 @@
+/* Estilo padrão para desktops */
+.div-image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background: #000E29;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/images/oxxyimage.svg');
+}
+
+.div-image-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;   
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.div-image-text span {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.div-image-text h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.div-image-text span {
+    font-size: 30px;
+}
+
+.text-natacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20px;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+}
+
+.div-text-natacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 372px;
+    height: auto;
+    flex-shrink: 0;  
+    border-radius: 13px;
+    background: #CAA45D;
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.9s;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.text-botao {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-decoration: none;
+}
+
+.div-text-natacao:hover {
+    background: #D5B176;
+    transform: scale(1.05);
+}
+
+.text-cabobranco {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
+}
+
+.text-natacao h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.final-image {
+    width: 100%;
+    height: 50px;
+    background: #000E29;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1.5s;
+}
+
+.scroll-down a {
+    font-size: 30px;
+    color: #FFF;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+}
+
+/* Media Query para tablets (dispositivos com largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .div-image {
+        height: 60vh;
+    }
+
+    .div-image-text strong {
+        font-size: 30px;
+    }
+
+    .text-natacao {
+        height: 10px;
+    }
+
+    .div-text-natacao {
+        width: 60%;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    .text-cabobranco h2 {
+        font-size: 22px;
+    }
+
+    .text-natacao h2 {
+        font-size: 20px;
+    }
+
+    .div-image-text h2 {
+        font-size: 22px;
+    }
+}
+
+/* Media Query para celulares (dispositivos com largura até 600px) */
+@media (max-width: 600px) {
+    .div-image {
+        height: 50vh;
+    }
+
+    .div-image-text strong {
+        font-size: 24px;
+    }
+
+    .div-image-text img {
+        width: 200px;
+    }
+
+    .div-image-text h2 {
+        font-size: 10px;
+    }
+
+    .text-natacao {
+        height: 12px;
+    }
+
+    .div-text-natacao {
+        width: 100%;
+        height: 25px;
+        padding: 5px;
+    }
+
+    .div-text-natacao h2 {
+        font-size: 8px;
+    }
+
+    .text-cabobranco h2 {
+        font-size: 18px;
+    }
+
+    .text-natacao h2 {
+        font-size: 10px;
+    }
+
+    .div-image-text h2 {
+        font-size: 20px;
+    }
+}
+
+/* Keyframes para animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

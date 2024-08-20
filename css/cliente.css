@@ -1,0 +1,148 @@
+/* Estilo padrão para desktops */
+.cliente {
+    display: flex;
+    gap: 20px;
+    width: auto;
+    height: 650px;
+    flex-shrink: 0;
+    background-color: #000E29;
+}
+
+.cliente-div-text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    width: 902px;
+    height: 500px;
+    gap: 20px;
+}
+
+.cliente-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cliente-div-text li {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cliente-consultoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.cliente-consultoria-text {
+    width: 398px;
+    height: 325px;
+    flex-shrink: 0;
+}
+
+.cliente-consultoria h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.cliente-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/* Media Query para tablets (dispositivos com largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .cliente {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .cliente-div-text {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .cliente-div-text li {
+        font-size: 22px;
+    }
+
+    .cliente-consultoria {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cliente-consultoria-text {
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+
+    .cliente-consultoria h2 {
+        font-size: 50px;
+    }
+
+    .cliente-text {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+/* Media Query para celulares (dispositivos com largura até 600px) */
+@media (max-width: 600px) {
+    .cliente {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .cliente-div-text {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .cliente-div-text li {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .cliente-consultoria {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .cliente-consultoria-text {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .cliente-consultoria h2 {
+        font-size: 40px;
+    }
+
+    .cliente-text {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

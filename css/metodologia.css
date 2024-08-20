@@ -1,0 +1,247 @@
+/* Estilo padrão para desktops */
+.metodologia-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.metodologia-text {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.metodologia-text h2 {
+    color: #000E29;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.metodologia-text span {
+    color: #000E29;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.paep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 65%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: rgba(0, 14, 41, 0.75);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.paep-text {
+    width: 60%;
+}
+
+.paep-text h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.funcao-paep-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.funcao-paep {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+    border-radius: 31px;
+    border: 3px solid #CECECE;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.funcao-paep-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.funcao-paep-text h2 {
+    color: #000E29;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.paep-etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+
+.etapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 80%;
+    height: auto;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+    z-index: 10; /* Garante que a div .etapas apareça acima de outros elementos */
+}
+
+.etapas-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.etapas-box h2 {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.etapa-text {
+    width: 150px;
+    height: 100px;
+}
+
+.etapa-text h2 {
+    color: #515151;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.etapas-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 114px;
+    height: 114px;
+    background-color: #7B7237;
+    border-radius: 100%;
+}
+
+/* Media Query para tablets (dispositivos com largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .paep {
+        width: 80%;
+        height: auto;
+    }
+
+    .funcao-paep-container {
+        display: none;
+    }
+
+    .funcao-paep {
+        width: 90%;
+        height: 500px;
+    }
+
+    .etapas {
+        width: 90%;
+    }
+
+    .funcao-paep-text h2 {
+        font-size: 48px;
+    }
+
+    .metodologia-container {
+        align-items: center;
+    }
+}
+
+/* Media Query para celulares (dispositivos com largura até 600px) */
+@media (max-width: 600px) {
+    .metodologia-text h2,
+    .metodologia-text span,
+    .paep-text h2,
+    .funcao-paep-text h2,
+    .etapas-box h2 {
+        font-size: 24px;
+    }
+
+    .paep {
+        width: 90%;
+        height: auto;
+    }
+
+    .funcao-paep {
+        width: 95%;
+        height: 400px;
+        border: none;
+    }
+
+    .funcao-paep-container {
+        display: none;
+    }
+
+    .etapas {
+        width: 100%;
+        flex-direction: column;
+        z-index: 10; /* Garante que a div .etapas apareça acima de outros elementos no mobile */
+    }
+
+    .etapas-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .metodologia-container {
+        align-items: center;
+    }
+}
+
+/* Keyframes para animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

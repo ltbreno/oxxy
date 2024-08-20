@@ -1,0 +1,106 @@
+/* Estilo padrão para desktops */
+.chefe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 500px;
+}
+
+.chefe-title h2 {
+    color: #000E29;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.chefe-image {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+}
+
+.chefe-image-text {
+    width: 650px;
+}
+
+.chefe-image img {
+    border-radius: 100%;
+}
+
+.chefe-image h2 {
+    color: #000E29;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+/* Media Query para tablets (dispositivos com largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .chefe {
+        height: auto;
+        padding: 20px;
+    }
+
+    .chefe-title h2 {
+        font-size: 35px;
+        margin-bottom: 40px;
+    }
+
+    .chefe-image {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .chefe-image-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .chefe-image h2 {
+        font-size: 20px;
+    }
+}
+
+/* Media Query para celulares (dispositivos com largura até 600px) */
+@media (max-width: 600px) {
+    .chefe {
+        height: auto;
+        padding: 20px;
+    }
+
+    .chefe-title h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .chefe-image {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .chefe-image-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .chefe-image h2 {
+        font-size: 18px;
+    }
+
+    .chefe-image img {
+        width: 100px;
+        height: 100px;
+    }
+}

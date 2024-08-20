@@ -1,0 +1,24 @@
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
